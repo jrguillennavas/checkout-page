@@ -1,0 +1,124 @@
+@import "./vars.scss";
+@media only screen and (min-width:1020px){
+    .layout {
+        max-width: 1440px;
+        height: 100vh;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10rem 1fr 8rem;
+        grid-template-areas:  "HEADER HEADER"
+                              "FORM SHIPPING "
+                              "FOOTER FOOTER";
+    }
+
+    /*----- HEADER -----*/
+
+    .header__title {
+    font-size: 3.6rem;
+    }
+
+    /*----- SHIPPING -----*/
+
+    .shipping{
+        width: 50%;
+        height: 65%;
+        margin-top: .8rem;
+
+        .shipping__photo-item {
+          width: 40%;
+        }
+        .shipping__description {
+            width: 100%;
+        }
+        .shipping__title {
+            font-size: 1.6rem;
+            color: #4e5150;
+        }
+        .shipping__detail{
+            justify-content: space-evenly;
+        }
+        .shipping__price {
+            font-size: 1.6rem;
+        }
+        .shipping__discount {
+            font-size: 1.2rem;
+        }
+        .sshipping__total-title {
+            font-size: 1.8rem;
+
+        }
+        .shipping__total-tax {
+            font-size: 1.4rem;
+
+        }
+
+    }
+
+  
+
+    .infoaddress{
+        width: 70%;
+        height: 90%;
+        margin-top: 0;
+
+        ::placeholder {
+            font-size: 1.6rem;
+          }
+        
+          .address__title,
+          .information__title {
+            font-size: 1.8rem;
+
+          }
+        
+          .information,
+          .address {
+        
+            .material-icons {
+              top: 3.3rem;
+              font-size: 1.7rem;
+            }
+        
+            label {
+              margin-top: 1.2rem;
+              font-size: 1rem;
+              font-weight: 600;
+            }
+        
+            input {
+              width: 100%;
+              height: 5rem;
+              margin-top: 0.5rem;
+              font-family: $font-monserrat;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 1.6rem;
+              border-radius: 1.2rem;
+              color: #828282;
+              font-size: 1.2rem;
+              padding-left: 3.5rem;
+              border: 1px solid #828282;
+              outline-style: none;
+            }
+          }
+        
+          .address__country-post {
+            display: flex;
+            justify-content: space-between;
+          }
+          .address--country-post {
+            width: 45%;
+          }
+
+        .infoaddress__saved {
+            margin-top: -5rem;
+            font-size: 1.2rem;
+        }
+
+        .btn-send {
+            margin-left: 30rem;
+            font-size: 1.6rem;
+        }
+ 
+    }
+}
